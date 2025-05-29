@@ -1,0 +1,149 @@
+.service-list-item {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.05);
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.service-item-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-width: 200px;
+  flex: 1;
+}
+
+.service-item-icon {
+  padding: 0.75rem;
+  border-radius: 50%;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-item-text h4 {
+  font-weight: 600;
+  margin: 0 0 0.25rem 0;
+  font-size: 1rem;
+}
+
+.service-item-text p {
+  font-size: 0.875rem;
+  color: #94a3b8;
+  margin: 0;
+}
+
+.service-details-grid {
+  display: flex;
+  flex: 2;
+  justify-content: space-between;
+  margin-right: 1rem;
+  gap: 1rem;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.detail-column {
+  min-width: 120px;
+}
+
+.detail-column h5 {
+  font-weight: 600;
+  margin: 0 0 0.25rem 0;
+  font-size: 0.875rem;
+  color: #334155;
+}
+
+.detail-column p {
+  font-size: 0.875rem;
+  color: #64748b;
+  margin: 0;
+}
+
+.service-item-button {
+  border: 1px solid #3b82f6;
+  color: #3b82f6;
+  background-color: transparent;
+  padding: 0.5rem 1.25rem;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  transition: 0.2s;
+  white-space: nowrap;
+  height: fit-content;
+  align-self: flex-start;
+}
+
+@media (max-width: 900px) {
+  .service-list-item {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .service-item-text h4 {
+    font-size: 0.95rem;
+  }
+
+  .service-item-text p,
+  .detail-column h5 {
+    font-size: 0.75rem;
+  }
+
+  .detail-column p {
+    font-size: 0.7rem;
+  }
+
+  .service-item-button {
+    font-size: 0.75rem;
+    padding: 0.4rem 1rem;
+  }
+
+  .service-details-grid {
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .service-details-grid {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .service-list-item {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .service-item-icon {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .service-item-text h4 {
+    font-size: 0.85rem;
+  }
+
+  .service-item-text p {
+    font-size: 0.7rem;
+  }
+
+  .service-item-button {
+    margin-left: auto;
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .service-item-button {
+    font-size: 0.7rem;
+    padding: 0.5rem 0.6rem;
+  }
+}
