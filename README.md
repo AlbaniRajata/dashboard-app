@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+# BankDash – Credit Cards Page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a frontend technical test to replicate the **Credit Cards Dashboard UI** from a given Figma design using **React**, **Ant Design**.
 
-## Available Scripts
+## 🛠 Tech Stack
 
-In the project directory, you can run:
+- **React JS (CRA)**
+- **Ant Design** – UI Components
+- **React Router DOM** – Routing
+- **json-server** – Mock REST API
+- **CSS Module** – Custom styling
+- **Google Fonts: Inter**
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📁 Project Structure
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```
 
-### `npm test`
+src/
+├── components/
+│ ├── CreditCards/
+│ │ ├── AddNewCard.js, CardList.js, CardSettings.js, ...
+│ ├── ServiceCards/
+│ │ ├── ServiceCard.js, ServiceListItem.js, ...
+│ ├── Setting/
+│ │ ├── Preferences.js, EditProfile.js, Security.js, ...
+├── layouts/
+│ ├── MainLayout.js, HeaderBar.js, Sidebar.js
+├── pages/
+│ ├── CreditCards.js, Services.js, Settings.js
+├── styles/
+│ ├── creditCard.css, services.css, setting.css
+├── App.js
+└── index.js
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+````
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📷 Key Features (match Figma!)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- ✅ Responsive design (Desktop, Tablet, Mobile)
+- ✅ Sidebar with active state, custom icon colors, collapsible on mobile
+- ✅ Header with dynamic page title, search bar, and icons
+- ✅ My Cards section with horizontal layout & gradient cards
+- ✅ Fully responsive layout using Ant Design's grid system
+- ✅ Font Inter loaded via Google Fonts
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🔗 Live Demo
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+You can deploy this project on platforms like:
+- [Vercel](https://dashboard-app-eta-jet.vercel.app)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🚀 Getting Started
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 1. Clone the Repo
+```bash
+git clone https://github.com/AlbaniRajata/dashboard-app.git
+cd dashboard-app
+````
 
-## Learn More
+### 2. Install Dependencies
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm install
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 3. Start the React App
 
-### Code Splitting
+```bash
+npm start
+```
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🧩 Todos
 
-### Analyzing the Bundle Size
+* [ ] Integrate with real API
+* [ ] Add chart & settings interactivity
+* [ ] Unit test & integration test
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
