@@ -1,0 +1,99 @@
+.security {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.section-label {
+  font-size: 14px;
+  color: #374151;
+  font-weight: 600;
+}
+
+input[type="password"] {
+    width: 50%;
+    padding: 10px 12px;
+    border: 2px solid #e5e5e5;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #858688;
+    font-size: 14px;
+}
+
+.input-label {
+  font-size: 14px;
+  color: #374151;
+}
+
+
+.toggle-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #374151;
+  margin-top: 10px;
+}
+
+/* Switch style (sama seperti Preferences.css) */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #06d6a0;
+}
+
+input:checked + .slider::before {
+  transform: translateX(16px);
+}
+
+.save-button {
+  align-self: flex-end;
+  background-color: #1d4ed8;
+  color: white;
+  padding: 10px 28px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}

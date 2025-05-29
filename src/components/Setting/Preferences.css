@@ -1,0 +1,165 @@
+.preferences {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 14px;
+  color: #374151;
+  margin-bottom: 6px;
+}
+
+.form-group input {
+  padding: 10px 12px;
+  border: 2px solid #e5e5e5;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #858688;
+  font-size: 14px;
+}
+
+.notification-section {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.section-label {
+  font-size: 14px;
+  color: #374151;
+  font-weight: 600;
+}
+
+.toggle-row {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.toggle-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #374151;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #06d6a0;
+}
+
+input:checked + .slider::before {
+  transform: translateX(16px);
+}
+
+.save-button {
+  align-self: flex-end;
+  background-color: #1d4ed8;
+  color: white;
+  padding: 10px 28px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .form-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .form-group label,
+  .section-label,
+  .toggle-item {
+    font-size: 13px;
+  }
+
+  .save-button {
+    align-self: stretch;
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .preferences {
+    padding: 0 12px;
+  }
+
+  .toggle-row {
+    gap: 10px;
+  }
+
+  .toggle-item {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .toggle-item span {
+    flex: 1;
+    font-size: 13px;
+  }
+
+  .switch {
+    flex-shrink: 0;
+    width: 36px;
+    height: 20px;
+  }
+
+  .slider::before {
+    height: 14px;
+    width: 14px;
+  }
+}
