@@ -34,7 +34,6 @@
   transform: translateY(-1px);
 }
 
-/* CARD ICON BASE */
 .card-icon {
   width: 60px;
   height: 60px;
@@ -43,18 +42,16 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  background-color: #F3F4F6; /* Warna latar default */
+  background-color: #F3F4F6;
   transition: background-color 0.3s ease;
 }
 
-/* Jika memakai img */
 .card-icon-img {
   width: 32px;
   height: 32px;
   object-fit: contain;
 }
 
-/* Jika memakai SVG icon (misal dari react-icons atau inline svg) */
 .card-icon > svg {
   font-size: 24px;
   color: #4B5563;

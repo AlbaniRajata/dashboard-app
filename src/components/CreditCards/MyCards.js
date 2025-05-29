@@ -6,7 +6,6 @@ function MyCards() {
     <div className="my-cards-section">
       <h2 className="section-title">My Cards</h2>
       <div className="card-group">
-        {/* CARD 1 */}
         <div className="credit-card card-blue">
           <div className="card-header">
             <div>
@@ -31,7 +30,6 @@ function MyCards() {
           </div>
         </div>
 
-        {/* CARD 2 */}
         <div className="credit-card card-purple">
           <div className="card-header">
             <div>
@@ -56,7 +54,6 @@ function MyCards() {
           </div>
         </div>
 
-        {/* CARD 3 */}
         <div className="credit-card card-white">
           <div className="card-header">
             <div>

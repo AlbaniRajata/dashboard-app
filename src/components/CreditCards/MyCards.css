@@ -93,7 +93,6 @@
   margin-top: 20px;
 }
 
-/* === Tablet/Desktop (1024px – 1440px): Layout tetap, kartu 1 baris penuh tanpa scroll === */
 @media (min-width: 1024px) {
   .card-group {
     flex-wrap: nowrap;
@@ -101,13 +100,12 @@
   }
 
   .credit-card {
-    flex: 1 1 calc(33.33% - 13.33px); /* 3 kartu dengan gap */
+    flex: 1 1 calc(33.33% - 13.33px);
     max-width: 100%;
     min-width: 0;
   }
 }
 
-/* === Untuk layar < 800px: scroll horizontal aktif === */
 @media (max-width: 799px) {
   .card-group {
     flex-wrap: nowrap;

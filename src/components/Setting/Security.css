@@ -41,7 +41,6 @@ input[type="password"] {
   margin-top: 10px;
 }
 
-/* Switch style (sama seperti Preferences.css) */
 .switch {
   position: relative;
   display: inline-block;

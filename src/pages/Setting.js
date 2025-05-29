@@ -1,4 +1,3 @@
-// src/pages/Setting.js
 import React from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
 import '../styles/setting.css';

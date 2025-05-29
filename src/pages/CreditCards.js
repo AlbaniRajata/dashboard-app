@@ -13,7 +13,6 @@ function CreditCardPage() {
         <MyCards />
 
         <div className="main-layout">
-          {/* Kolom 1 */}
           <div className="column-group">
             <div className="left-column1">
               <CardStatistics />
@@ -23,7 +22,6 @@ function CreditCardPage() {
             </div>
           </div>
 
-          {/* Kolom 2 */}
           <div className="column-group">
             <div className="left-column2">
               <AddNewCard />
