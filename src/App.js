@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import MainLayout from './layouts/MainLayout';
+import CreditCards from './pages/CreditCards';
+import Services from './pages/Services';
+import Setting from './pages/Setting';
+import EditProfile from './components/Setting/EditProfile';
+import Preferences from './components/Setting/Preferences';
+import Security from './components/Setting/Security';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<MainLayout />}>
+          <Route index element={<Navigate to="/credit-cards" />} />
+          <Route path="credit-cards" element={<CreditCards />} />
+          <Route path="services" element={<Services />} />
+          <Route path="setting" element={<Setting />}>
+            <Route index element={<Navigate to="edit-profile" />} />
+            <Route path="edit-profile" element={<EditProfile />} />
+            <Route path="preferences" element={<Preferences />} />
+            <Route path="security" element={<Security />} />
+          </Route>
+        </Route>
+      </Routes>
+    </Router>
   );
 }
 
