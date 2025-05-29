@@ -1,0 +1,104 @@
+.add-card-container {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2D3A4B;
+  margin-bottom: 15px;
+}
+
+.card-description {
+  font-size: 14px;
+  color: #8E92A4;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  border-radius: 10px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 20px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  font-size: 12px;
+  color: #8E92A4;
+  margin-bottom: 6px;
+}
+
+.form-input {
+  padding: 10px 12px;
+  border: 2px solid #E5E5E5;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #2D3A4B;
+  background-color: white;
+}
+
+.form-input.read-only {
+  border: 2px solid #E5E5E5;
+}
+
+.add-card-button {
+  width: 48%;
+  padding: 12px;
+  background: #2a44c3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.add-card-button:hover {
+  background: #3A5BEF;
+}
+
+@media (max-width: 767px) {
+  .add-card-container {
+    width: 100%;
+    padding: 16px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .form-label {
+    font-size: 11px;
+  }
+
+  .form-input {
+    font-size: 13px;
+    padding: 9px 10px;
+  }
+
+  .add-card-button {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .section-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .card-description {
+    font-size: 13px;
+    margin-bottom: 16px;
+  }
+}

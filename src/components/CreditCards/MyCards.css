@@ -1,0 +1,145 @@
+.my-cards-section {
+  margin-bottom: 15px;
+  margin-top: 40px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.card-group {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  overflow-x: hidden;
+  flex-wrap: nowrap;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+}
+
+.card-group::-webkit-scrollbar {
+  height: 6px;
+}
+
+.card-group::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+.credit-card {
+  flex: 1 1 0;
+  min-width: 0;
+  box-sizing: border-box;
+  border-radius: 16px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Inter', sans-serif;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.credit-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.card-blue {
+  background: linear-gradient(135deg, #2d50f2, #5570f1);
+}
+
+.card-purple {
+  background: linear-gradient(135deg, #413aaf, #6a5af9);
+}
+
+.card-white {
+  background: #ffffff;
+  color: #2d3a4b;
+  border: 1px solid #e5e5e5;
+}
+
+.card-header,
+.card-middle,
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-info-label {
+  font-size: 10px;
+  opacity: 0.7;
+  margin-bottom: 2px;
+}
+
+.card-info-value {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.card-balance {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.card-number {
+  font-size: 15px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+/* === Tablet/Desktop (1024px – 1440px): Layout tetap, kartu 1 baris penuh tanpa scroll === */
+@media (min-width: 1024px) {
+  .card-group {
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+  }
+
+  .credit-card {
+    flex: 1 1 calc(33.33% - 13.33px); /* 3 kartu dengan gap */
+    max-width: 100%;
+    min-width: 0;
+  }
+}
+
+/* === Untuk layar < 800px: scroll horizontal aktif === */
+@media (max-width: 799px) {
+  .card-group {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+
+  .credit-card {
+    flex: 0 0 280px;
+    min-width: 280px;
+  }
+}
+
+@media (max-width: 499px) {
+  .credit-card {
+    flex: 0 0 240px;
+    min-width: 240px;
+    padding: 12px;
+  }
+
+  .card-balance {
+    font-size: 16px;
+  }
+
+  .card-number {
+    font-size: 14px;
+  }
+
+  .card-info-value {
+    font-size: 12px;
+  }
+
+  .card-info-label {
+    font-size: 9px;
+  }
+}

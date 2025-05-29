@@ -1,0 +1,54 @@
+.statistics-card {
+  background: white;
+  border-radius: 16px;
+  width: 300px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.chart-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.bank-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.bank-column {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.bank-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bank-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 20px;
+}
+
+.bank-name {
+  font-size: 14px;
+  color: #2D3A4B;
+}
+
+@media (max-width: 499px) {
+  .statistics-card {
+    width: 100%;
+  }
+}

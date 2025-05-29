@@ -1,0 +1,76 @@
+.card-settings-section {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2D3A4B;
+  margin-bottom: 14px;
+}
+
+.settings-container {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
+.setting-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.setting-icon {
+  font-size: 34px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.setting-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.setting-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #2D3A4B;
+}
+
+.setting-description {
+  font-size: 15px;
+  color: #8E92A4;
+}
+
+@media (max-width: 767px) {
+  .card-settings-section {
+    margin-left: 0;
+    margin-top: 20px;
+    padding: 0 12px;
+  }
+
+  .settings-container {
+    padding: 16px;
+    gap: 20px;
+  }
+
+  .setting-icon {
+    font-size: 28px;
+    padding: 8px;
+  }
+
+  .setting-title {
+    font-size: 13px;
+  }
+
+  .setting-description {
+    font-size: 12px;
+  }
+}
